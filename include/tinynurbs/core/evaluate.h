@@ -267,7 +267,7 @@ std::vector<glm::vec<3, T>> curveDerivatives(const Curve<T> &crv, int num_ders, 
  * @param[in] knots Knot vector of the curve.
  * @param[in] control_points Control points of the curve.
  * @param[in] weights Weights corresponding to each control point.
- * @param[in] num_ders Number of times to differentiate.
+ * @param[in] num_ders Number of times to differentiate.//求微分
  * @param[inout] curve_ders Derivatives of the curve at u.
  * E.g. curve_ders[n] is the nth derivative at u, where n is between 0 and
  * num_ders-1.

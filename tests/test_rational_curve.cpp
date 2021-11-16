@@ -38,7 +38,7 @@ TEST_CASE("curvePoint (rational)", "[curve, rational, evaluate]")
 {
     auto crv = getCircle();
     glm::vec3 pt1 = tinynurbs::curvePoint(crv, 0.f);
-    REQUIRE(pt1.x == Approx(1));
+    REQUIRE(pt1.x == Approx(1));//Approx：大约
     REQUIRE(pt1.y == Approx(0));
     REQUIRE(pt1.z == Approx(0));
     glm::vec3 pt2 = curvePoint(crv, glm::pi<float>());
